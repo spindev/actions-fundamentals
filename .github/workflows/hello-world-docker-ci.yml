@@ -29,7 +29,7 @@ jobs:
 
       - name: Run my own container action
         id: hello-action
-        uses: spindev-actions-workshop/hello-docker-action
+        uses: spindev-actions-workshop/hello-docker-action@main
         with:
           who-to-greet: '@spindev from remote repo.'
 
