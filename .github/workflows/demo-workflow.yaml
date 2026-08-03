@@ -11,7 +11,7 @@ on:
 
 jobs:
   hello:
-    runs-on: ubutnu-latest
+    runs-on: ubuntu-latest
     name: My Hello Job
     steps:
       - name: Checkout the repository
@@ -19,3 +19,4 @@ jobs:
       - name: Greet someone
         shell: bash
         run: echo "hello ${{ github.event.inputs.who-to-greet }}"
+      - run: tree
